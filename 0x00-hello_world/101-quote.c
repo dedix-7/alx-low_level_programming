@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	char names[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char name[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(2, names, 59);
+	write(2, name, 59);
 	return (1);
 }
