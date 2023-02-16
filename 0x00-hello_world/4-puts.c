@@ -2,7 +2,7 @@
 /**
  * main - start of execution
  *
- * this program uses puts instead of printf
+ * Return: always 0
  */
 int main (void)
 {

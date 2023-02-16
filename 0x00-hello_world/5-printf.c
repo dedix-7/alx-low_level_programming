@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - starting point
  * 
- * return zero(always succeed)
+ *Return : always 0 (success)
  *
  * /
 int main(void)
