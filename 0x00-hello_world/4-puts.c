@@ -1,11 +1,12 @@
 #include<stdio.h>
 /**
  *
- * entry main
- * this program usesputs instead of printf
- * */
+ * main- start of execution
+ *
+ * this program uses puts instead of printf
+ */
 int main()
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return 0;
+	return(0);
 }
