@@ -18,10 +18,10 @@ int main(void)
 		ch1 = 48;
 		while (ch1 < 58)
 		{
-			ch3=58;
-			while (ch3<58)
+			ch3 = 58;
+			while (ch3 < 58)
 			{
-				if (ch2 != ch1 && ch2 < ch3 && ch2 != ch3 && ch1 < ch2 && ch2 < ch3)
+				if (ch2 != ch1 && ch2 != ch3 && ch1 != ch3 && ch2 < ch1 && ch1 < ch3)
 			{
 				putchar(ch2);
 				putchar(ch1);
