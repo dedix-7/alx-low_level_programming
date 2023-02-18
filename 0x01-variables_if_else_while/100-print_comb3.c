@@ -12,7 +12,7 @@ int main(void)
 	ch1 = 48;
 	ch2 = 48;
 
-	while (ch1 < 58)
+	while (ch2 < 58)
 	{
 		ch1 = 48;
 		while (ch2 < 58)
