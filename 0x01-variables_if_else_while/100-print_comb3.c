@@ -17,7 +17,7 @@ int main (void)
 		ch1 = 48;
 		while (ch2 < 58)
 		{
-			if (ch1 != ch1 && ch1 < i)
+			if (ch2 != ch1 && ch2 < ich1)
 			{
 				putchar(ch2);
 				putchar(ch1);
