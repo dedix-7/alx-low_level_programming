@@ -25,7 +25,7 @@ int main(void)
 			{
 				putchar(ch2);
 				putchar(ch1);
-				putchar(ch3)
+				putchar(ch3);
 				if (ch1 == 56 && ch2 == 55 && ch3 == 57)
 				{
 					break;
