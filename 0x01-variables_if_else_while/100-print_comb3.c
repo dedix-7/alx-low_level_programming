@@ -4,7 +4,7 @@
  *
  * Return: (0) an integer
  */
-int main (void)
+int main(void)
 {
 
 	int ch1, ch2;
@@ -12,7 +12,7 @@ int main (void)
 	ch1 = 48;
 	ch2 = 48;
 
-	while (ch2 < 58)
+	while (ch1 < 58)
 	{
 		ch1 = 48;
 		while (ch2 < 58)
