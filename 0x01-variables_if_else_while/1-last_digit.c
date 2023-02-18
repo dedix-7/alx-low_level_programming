@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 /**
- *
- * main -start execution of the program
+ * main - start execution of the program
  * 
- * Return - 0 Always (success)
+ * Return:  0 Always (success)
  */
 int main(void)
 {
