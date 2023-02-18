@@ -1,11 +1,9 @@
 #include <stdio.h>
 /**
- * main - start printing lowercase characters
- *
+ * main - start printing lowercase character
  * Return: (0) an integer
  */
 int main(void)
-{
 {
 int i, e, g, h, op1, op2;
 
@@ -45,6 +43,4 @@ while (h < 58)
 }
 putchar('\n');
 return (0);
-}
-
 }
