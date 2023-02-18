@@ -7,7 +7,7 @@
 int main(void)
 {
 
-	int ch1, ch2;
+	int ch1, ch2, ch3;
 
 	ch1 = 48;
 	ch2 = 48;
