@@ -6,32 +6,45 @@
  */
 int main(void)
 {
+{
+int i, e, g, h, op1, op2;
 
-	int ch1, ch2;
-
-	ch1 = 48;
-	ch2 = 48;
-
-	while (ch2 < 58)
+i = e = g = h = 48;
+while (h < 58)
+{
+	g = 48;
+	while (g < 58)
 	{
-		ch1 = 48;
-		while (ch2 < 58)
+		e = 48;
+		while (e < 58)
 		{
-			if (ch2 != ch1 && ch2 < ch1)
+			i = 48;
+			while (i < 58)
 			{
-				putchar(ch2);
-				putchar(ch1);
-				if (ch1 == 57 && ch2 == 56)
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
 				{
-					break;
+					putchar(h);
+					putchar(g);
+					putchar(' ');
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
+				i++;
 			}
-			ch1++;
+			e++;
 		}
-		ch2++;
+		g++;
 	}
-	putchar('\n');
-	return (0);
+	h++;
+}
+putchar('\n');
+return (0);
+}
+
 }
