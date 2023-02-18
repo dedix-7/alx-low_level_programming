@@ -7,30 +7,30 @@
 int main(void)
 {
 
-	int ch1, ch2;
+	int i, e;
 
-	ch1 = 48;
-	ch2 = 48;
+	i = 48;
+	e = 48;
 
-	while (ch2 < 58)
+	while (e < 58)
 	{
-		ch1 = 48;
-		while (ch2 < 58)
+		i = 48;
+		while (i < 58)
 		{
-			if (ch2 != ch1 && ch2 < ch1)
+			if (e != i && e < i)
 			{
-				putchar(ch2);
-				putchar(ch1);
-				if (ch1 == 57 && ch2 == 56)
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
 				{
 					break;
 				}
 				putchar(',');
 				putchar(' ');
 			}
-			ch1++;
+			i++;
 		}
-		ch2++;
+		e++;
 	}
 	putchar('\n');
 	return (0);
