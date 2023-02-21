@@ -5,8 +5,9 @@
  * Return: type int to ensure success
  */
 
-int main()
+int main(void)
 {
-  write(_putchar.c);
+  putchar(_putchar.c);
   return (0);
+  
 }
