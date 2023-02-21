@@ -6,5 +6,5 @@
  */
 void write(void)
 {
-  putchar('_putchar.c\n');
+  putchar("_putchar.c\n");
 }
