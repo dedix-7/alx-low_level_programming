@@ -12,7 +12,7 @@ int main(void)
   int i;
 
   for (i=0; i < display[]; i++)
-    _putchar(i);
+    _putchar('i');
   _putchar('\n');
   return (0);
   
