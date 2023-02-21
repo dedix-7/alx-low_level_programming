@@ -7,7 +7,7 @@
 
 int main(void)
 {
-  putchar(_putchar.c);
+  putchar('_putchar.c\n');
   return (0);
   
 }
