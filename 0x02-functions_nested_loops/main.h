@@ -1,10 +1,13 @@
-#include<stdio.h>
+#include <unistd.h>
+
 /**
- * header file to include with functions to be called in this project.
- * Return : void as it just prints for this case
- * main - is not included as this is just a header file
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-void write(void)
+int _putchar(char c)
 {
-  putchar("_putchar.c\n");
+  return (write(1, &c, 1));
 }
