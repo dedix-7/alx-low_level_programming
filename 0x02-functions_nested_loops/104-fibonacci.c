@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int counter1, variable1, counter2, variable2;
+	unsigned long int counter1, variable1, counter2, variable2;
 
 	variable1 = 1;
 	variable2 = 2;
