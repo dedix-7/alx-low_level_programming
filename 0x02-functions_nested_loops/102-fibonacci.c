@@ -13,7 +13,7 @@ int main(void)
 	variable1 = 0;
 	variable2 = 1;
 
-	printf("%ld ,%ld ,");
+	printf("%ld ,%ld ,", variable1, variable2);
 
 	for (counter1 = 0; counter1 <= 48; counter1++)
 	{
