@@ -13,12 +13,12 @@ int main(void)
 	variable1 = 0;
 	variable2 = 1;
 
-	printf("%d ,%d ,");
+	printf("%ld ,%ld ,");
 
 	for (counter1 = 0; counter1 <= 48; counter1++)
 	{
 	counter2 = variable1 + variable2;
-	printf("%d, ", counter2);
+	printf("%ld, ", counter2);
 	variable1 = variable2;
 	variable2 = counter2;
 	}
