@@ -22,6 +22,7 @@ int main(void)
 	variable1 = variable2;
 	variable2 = counter2;
 	}
+	printf("\n");
 	return (0);
 }
 
