@@ -21,23 +21,23 @@ void times_table(void)
 
 			if (column == 0)
 			{
-				putchar('0');
+				_putchar('0');
 			}
 			else if (product < 10)
 			{
-				putchar(',');
-				putchar(' ');
-				putchar(' ');
-				putchar(ones + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(ones + '0');
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
-				putchar(tens + '0');
-				putchar(ones + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(tens + '0');
+				_putchar(ones + '0');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
