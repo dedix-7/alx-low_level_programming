@@ -7,7 +7,7 @@
  * Return: no return
  */
 
-void print_times_table(int n)
+void print_times_table (int n)
 {
 	int row, column, product;
 
@@ -36,7 +36,7 @@ void print_times_table(int n)
 				}
 				else
 				{
-					if(column != 0)
+					if (column != 0)
 					{
 						_putchar(',');
 						_putchar(32);
