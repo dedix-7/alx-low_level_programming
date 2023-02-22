@@ -1,8 +1,9 @@
 #include<stdio.h>
 /**
   * Description: to print numbers till it get
+  * s to ninety eight
   * Return: no value as it prints
-  * print_to_98 - function to pnt out numbersr
+  * print_to_98 - Prints function to pnt out numbersr
   * @n: integer to set counter
   */
 
