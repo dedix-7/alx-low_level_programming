@@ -10,7 +10,7 @@ int main(void)
 {
 	int counter1, variable1, counter2;
 
-	counter1 = 0; variable1 = 0, variable2 = 1; counter2 = 0;
+	counter1 = 0; variable1 = 0, counter2 = 0;
 
 	for (counter1 = 0; counter1 <=50; counter1++)
 	{
