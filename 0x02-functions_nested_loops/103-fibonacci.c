@@ -18,13 +18,12 @@ int main(void)
 	while (counter2 <= 4000000)
 	{
 	counter2 = variable1 + variable2;
-	counter1 += counter2;
 	variable1 = variable2;
 	variable2 = counter2;
-	if (variable2 % 2 == 0)
+	if (variable1 % 2 == 0)
 		counter1 += variable1;
 	}
-	printf("%ld\n", counter2);
+	printf("%ld\n", counter1);
 	return (0);
 }
 
