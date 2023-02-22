@@ -1,10 +1,11 @@
 #include<stdio.h>
 /**
-  * Description: to print numbers till it get
-  * s to ninety eight
-  * Return: no value as it prints
-  * print_to_98 - Prints function to pnt out numbersr
-  * @n: integer to set counter
+  * print_to_98 - prints numbers to 98
+  * @n: starting integer
+  *
+  * Description: prints all natural number from n - 98
+  *
+  * Return: void
   */
 
 void print_to_98(int n)
