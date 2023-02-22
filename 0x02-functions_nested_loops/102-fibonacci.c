@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int counter1, variable1, variable2, counter2;
+	int counter1, variable1, counter2;
 
 	counter1 = 0; variable1 = 0, variable2 = 1; counter2 = 0;
 
