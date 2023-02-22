@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * This fnction prints ut individual characters
+ * _putchar - wrtes a singlei character to the output
+ * main - the function to begin execution
  *
- *  the directive to include the main header file
- *
- *  main(voi) - the function to begin execution
  * Return: type int to ensure success
  */
 
