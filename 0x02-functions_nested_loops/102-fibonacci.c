@@ -10,8 +10,8 @@ int main(void)
 {
 	long int counter1, variable1, counter2, variable2;
 
-	variable1 = 0;
-	variable2 = 1;
+	variable1 = 1;
+	variable2 = 2;
 
 	printf("%ld ,%ld ,", variable1, variable2);
 
