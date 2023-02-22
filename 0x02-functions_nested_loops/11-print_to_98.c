@@ -1,11 +1,9 @@
 #include<stdio.h>
 /**
- *
- * Return: no value as it prints
- * print_to_98 - function to print to 98
- * @n: integer to set counter
- * Description: a function that prints numbers to 98
- */
+  * Return: no value as it prints
+  * print_to_98 - function to print to 98
+  * @n: integer to set counter
+  */
 
 void print_to_98(int n)
 {
@@ -20,7 +18,7 @@ void print_to_98(int n)
 	{
 		for (; n >= 98; n--)
 		{
-			printf("%d, ",n);
+			printf("%d, "n);
 		}
 	}
 }
