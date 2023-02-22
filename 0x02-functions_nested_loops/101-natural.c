@@ -1,9 +1,7 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * print_times_table - Prints the n times table
- *
- * @arguments: nThere are no arguments
+ * main - Prints the sum
  *
  * Return: no return
  */
