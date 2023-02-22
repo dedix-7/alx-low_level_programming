@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - reoeat execution
+ * print_alphabet_x10 - reoeat execution
  * Return: void
  */
 void print_alphabet_x10(void)
@@ -9,9 +9,9 @@ void print_alphabet_x10(void)
 
 	int i;
 
-	for (i = 0;i < 10;i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (x ='a';x <= 'z';x++)
+		for (x = 'a'; x <= 'z'; x++)
 		{
 			_putchar(x);
 		}
