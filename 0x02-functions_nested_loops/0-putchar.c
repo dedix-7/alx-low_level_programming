@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _putchar - wrtes a singlei character to the output
+ *
  * main - the function to begin execution
  *
  * Return: type int to ensure success
