@@ -2,10 +2,10 @@
 /**
  * print_sign - checks if its character is in teh alphabet
  *
- * @n variable tah reprsents the letter
+ * @n: variable tah reprsents the letter
  * Return: 0 success, 1 otherwise
  */
-int print_sign(int n) 
+int print_sign(int n)
 {
 	if (n > 0)
 	{
