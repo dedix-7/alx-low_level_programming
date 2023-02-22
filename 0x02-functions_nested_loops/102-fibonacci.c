@@ -8,24 +8,18 @@
 
 int main(void)
 {
-	int counter1, variable1, counter2;
+	int counter1, variable1, counter2, variable2;
 
 	counter1 = 0;
 	variable1 = 0;
-	counter2 = 0;
+	variable2 = 1;
 
 	for (counter1 = 0; counter1 <= 50; counter1++)
 	{
-		if (variable1 == 0)
-			printf("%d, " , variable1);
-		else if (variable1 == 1)
-			printf("%d, " , variable1);
-		else
-		{
-			counter2 += variable1;
-			
-			printf ("%d ," , counter2);
-		}
+	counter2 = variable1 + variable2;
+	printf("%d, ", counter2);
+	variable1 = variable2;
+	variable2 = counter2;
 	}
 	return (0);
 }
