@@ -1,7 +1,7 @@
 #include "main.h"
 
-/** 
- * This project is to print the multiple table of 9
+/**
+ * Description: This project is to print the multiple table of 9
  * times_table - prints out the table
  * Return: it has no return value
  * takes nor arguments
