@@ -1,0 +1,1 @@
+This is a project so I can learn to use pointers and arrays. Pointers are basically addresses to a variable location wwhich makes them them importat in dynamic memory allocation.
