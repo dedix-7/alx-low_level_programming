@@ -1,0 +1,1 @@
+It's a learning project about pointers but I will have to start over
