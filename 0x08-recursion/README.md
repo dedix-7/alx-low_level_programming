@@ -9,3 +9,8 @@ It prints a string to the stabn=ndard output but busing recusrion insterad of lo
 ##1-print_rev_recursion.c
 printg a string in reverse
 Uses recursion, excepot that it calls putchar before calling itself
+##2-strlen_recursion.c
+get the length of a string using recursion
+##3-factorial.c
+get the factorial of a number
+
