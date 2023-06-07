@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion - prints a string of characters to the stdoutput and a newline
+ * _puts_recursion - prints a string of characters n a newline
  * @s: string to be printed
  *
  * Return: no return, hence void
@@ -13,6 +13,6 @@ void _puts_recursion(char *s)
 		_putchar(10);
 		return;
 	}
-	_putchar(s);
+	_putchar(*s);
 	_puts_recursion(s + 1);
 }
