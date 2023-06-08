@@ -11,18 +11,15 @@ int checkprime(int n, int i)
 
 	if (n <= 1)
 	{
-		check = 0;
-		return (check);
+		return (0);
 	}
 	else if (n == i)
 	{
-		check = 1;
-		return (check);
+		return (1);
 	}
 	else if ((n % i) == 0)
 	{
-		check = 0;
-		return (check);
+		return (0);
 	}
 	check = checkprime(n, i++);
 	return (check);
