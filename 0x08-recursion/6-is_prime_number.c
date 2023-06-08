@@ -13,7 +13,7 @@ int checkprime(int n, int i)
 	{
 		return (0);
 	}
-	else if (n == i)
+	else if (i == n)
 	{
 		return (1);
 	}
@@ -21,7 +21,7 @@ int checkprime(int n, int i)
 	{
 		return (0);
 	}
-	check = checkprime(n, i++);
+	check = checkprime(n, ++i);
 	return (check);
 }
 /**
