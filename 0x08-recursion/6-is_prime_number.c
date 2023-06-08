@@ -19,7 +19,7 @@ int checkprime(int n, int i)
 		check = 1;
 		return (check);
 	}
-	else if (((n % i) == 0) && (i < n))
+	else if ((n % i) == 0)
 	{
 		check = 0;
 		return (check);
