@@ -28,11 +28,10 @@ int _sqrt_recursion(int n)
 	if (n <= 0)
 	{
 		root = -1;
-		return (root);
 	}
 	else if (n > 0)
 	{
 		root = squareroot(n, 2);
-		return (root);
 	}
+	return (root);
 }
