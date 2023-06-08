@@ -7,14 +7,14 @@
  */
 int squareroot(int n, int i)
 {
-	int root;
-
-	if ((i * i) >= n)
+	if (i % (n / i) == 0)
 	{
-		return i;
+		if (i * (n / i) == n)
+			return (i);
+		else
+			return (-1);
 	}
-	root = squareroot(n, (i++));
-	return (root);
+	return (0 + squareroot(n, i + 1));
 }
 /**
  * _sqrt_recursion - finds the sqaureroot and returns it
@@ -25,6 +25,14 @@ int _sqrt_recursion(int n)
 {
 	int root;
 
-	root = squareroot(n, 1);
-	return (root);
+	if (n <= 0)
+	{
+		root = -1;
+		return (root);
+	}
+	else if (n > 0)
+	{
+		root = squareroot(n, 2);
+		return (root);
+	}
 }
