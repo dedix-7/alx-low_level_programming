@@ -29,6 +29,10 @@ int _sqrt_recursion(int n)
 	{
 		root = -1;
 	}
+	else if (n == 1)
+	{
+		root = 1;
+	}
 	else if (n > 0)
 	{
 		root = squareroot(n, 2);
