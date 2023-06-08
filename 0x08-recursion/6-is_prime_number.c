@@ -14,7 +14,7 @@ int checkprime(int n, int i)
 		check = 0;
 		return (check);
 	}
-	else if (((n % i) == 0) && (n == i))
+	else if (n == i)
 	{
 		check = 1;
 		return (check);
