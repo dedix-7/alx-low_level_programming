@@ -1,3 +1,4 @@
+#include<stdio.h>
 /**
  * main - return the name of the function
  * @argc: the number of command arguments
