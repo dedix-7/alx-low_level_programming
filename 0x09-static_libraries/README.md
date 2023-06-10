@@ -1,0 +1,1 @@
+This project os about creating static librarues in C
