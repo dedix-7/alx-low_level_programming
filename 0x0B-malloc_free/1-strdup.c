@@ -1,4 +1,19 @@
 #include "main.h"
+#include "holberton.h"
+
+/**
+ * _strlen - returns the length of a string.
+ * @s: input string.
+ * Return: length of a string.
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*(s + count) != '\0')
+		count++;
+	return (count);
+}
 /**
  * _strdup - return a pointer to a new address withduplicate
  * @str: given string
@@ -20,17 +35,4 @@ char *_strdup(char *str)
 		newstring[fillercount] = str[fillercount];
 	}
 	return (newstring);
-}
-/**
- * _strlen - returns the length of a string.
- * @s: input string.
- * Return: length of a string.
- */
-int _strlen(char *s)
-{
-	int count = 0;
-
-	while (*(s + count) != '\0')
-		count++;
-	return (count);
 }
