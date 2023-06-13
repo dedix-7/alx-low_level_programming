@@ -1,37 +1,28 @@
 #include "main.h"
-
 /**
- * _strlen - returns the length of a string.
- * @s: input string.
- * Return: length of a string.
- */
-int _strlen(char *s)
-{
-	int count = 0;
-
-	while (*(s + count) != '\0')
-		count++;
-	return (count);
-}
-/**
- * _strdup - return a pointer to a new address withduplicate
- * @str: given string
- * Return: pointer of the new string
+ * _strdup - returns a pointer to a newly allocated space in memory.
+ * @str: string.
+ *
+ * Return: pointer of an array of chars
  */
 char *_strdup(char *str)
 {
-	char *newstring;
-	int sizestring, fillercount;
+	char *strout;
+	unsigned int i, j;
 
-	sizestring = _strlen(str);
-	newstring = malloc(sizestring);
-	if (str == NULL || newstring == NULL)
-	{
+	if (str == NULL)
 		return (NULL);
-	}
-	for (fillercount = 0; fillercount <= sizestring; fillercount++)
-	{
-		newstring[fillercount] = str[fillercount];
-	}
-	return (newstring);
+
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	strout = (char *)malloc(sizeof(char) * (i + 1));
+
+	if (strout == NULL)
+		return (NULL);
+
+	for (j = 0; j <= i; j++)
+		strout[j] = str[j];
+
+	return (strout);
 }
