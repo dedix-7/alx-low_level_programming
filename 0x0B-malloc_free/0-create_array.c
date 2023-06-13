@@ -8,7 +8,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *array;
-	int fillercount;
+	unsigned int fillercount;
 
 	array = malloc(size);
 	if (size == 0 || array == NULL)
