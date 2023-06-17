@@ -5,3 +5,4 @@ It is a start before I look at calloc and realloc
 This file looks to create an array and initialize it with a specifc character.
 # Author
 dedix-7 - enox
+will continue as he does exrra projects
