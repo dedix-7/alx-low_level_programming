@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		for (fillcounter = 0; fillecounter < size; fillcounter++)
+		for (fillcounter = 0; fillcounter < size; fillcounter++)
 		{
 			createdarray[fillcounter] = c;
 		}
