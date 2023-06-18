@@ -81,8 +81,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	s1 = _strcat(s1,s2);
 	newpointer = _strcpy(newpointer, s1);
-
+	newpointer = _strcpy(newpointer, s2);
 	return (newpointer);
 }
