@@ -6,6 +6,7 @@ Those will come in the next project
 This file looks to create an array and initialize it with a specific character
 ## 1-strdup.c
 Creates a copy of a string in a new address in memory and returns a pointer to the new address
-
+## 2-str_concat.c
+A function that returns a pointer to a concatenated string in memory
 # Author
 Enoks

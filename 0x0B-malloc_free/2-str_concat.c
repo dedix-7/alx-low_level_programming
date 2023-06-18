@@ -39,6 +39,27 @@ int _strlen(char *s)
 	return (count);
 }
 /**
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte, to the
+ * buffer pointed to by dest.
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int count = 0;
+
+	while (count >= 0)
+	{
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
+			break;
+		count++;
+	}
+	return (dest);
+}
+/**
  * str_concat - a function that returns a pointer to a new address
  * with two concatentaed strings
  * @s1: first string
@@ -60,6 +81,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	newpointer = _strcat(s1, s2);
+	s1 = _strcat(s1,s2);
+	newpointer = _strcpy(newpointer, s1);
+
 	return (newpointer);
 }
