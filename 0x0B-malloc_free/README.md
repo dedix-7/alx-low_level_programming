@@ -4,3 +4,8 @@ It does not delve into the other siblings, free and realloc yet
 Those will come in the next project
 ## 0-create_array.c
 This file looks to create an array and initialize it with a specific character
+## 1-strdup.c
+Creates a copy of a string in a new address in memory and returns a pointer to the new address
+
+# Author
+Enoks
