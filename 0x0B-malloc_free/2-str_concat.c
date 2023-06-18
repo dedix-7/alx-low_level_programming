@@ -53,7 +53,7 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	else if (s2 == NULL)
 		s2 = "";
-	newpointer = malloc((_strlen(_strcat(s1, s2);) + 1);
+	newpointer = malloc((_strlen(_strcat(s1, s2)); + 1);
 	newpointer = _strncat(s1, s2);
 	return (newpointer);
 }
