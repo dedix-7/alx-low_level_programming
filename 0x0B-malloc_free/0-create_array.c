@@ -11,7 +11,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int fillcounter;
 
 	createdarray = malloc(size);
-	if (createdarray == NULL)
+	if (createdarray == NULL || size == 0)
 	{
 		return (NULL);
 	}
