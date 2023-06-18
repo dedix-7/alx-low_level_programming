@@ -56,6 +56,10 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	allocsize = _strlen(s1) + _strlen(s2);
 	newpointer = malloc(allocsize + 1);
+	if (newpointer == NULL)
+	{
+		return (NULL);
+	}
 	newpointer = _strcat(s1, s2);
 	return (newpointer);
 }
