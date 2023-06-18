@@ -7,7 +7,7 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char createdarray[];
+	char *createdarray;
 	int fillcounter;
 
 	createdarray = malloc(size);
