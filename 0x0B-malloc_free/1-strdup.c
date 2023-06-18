@@ -41,7 +41,6 @@ int _strlen(char *s)
  */
 char *_strdup(char *str)
 {
-	int size;
 	char *newstr;
 
 	newstr = malloc(_strlen(str) + 1);
