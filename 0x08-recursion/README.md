@@ -13,4 +13,9 @@ Uses recursion, excepot that it calls putchar before calling itself
 get the length of a string using recursion
 ##3-factorial.c
 get the factorial of a number
-
+##4-pow_recursion.c
+get a number raised to a gicen power
+##5-sqrt_recursion.c
+get the squareroot
+##6-is_prime_number.c
+check if the number is a prime number

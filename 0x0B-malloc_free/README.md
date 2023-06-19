@@ -8,5 +8,10 @@ This file looks to create an array and initialize it with a specific character
 Creates a copy of a string in a new address in memory and returns a pointer to the new address
 ## 2-str_concat.c
 A function that returns a pointer to a concatenated string in memory
+## 3-alloc_grid.c
+A function that allocates a 2d array of integers
+
 # Author
 Enoks
+# About
+Please look at malloc

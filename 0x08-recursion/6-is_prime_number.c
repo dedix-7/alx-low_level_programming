@@ -3,7 +3,7 @@
  * checkprime - function that checks if a number is prime
  * @n: number to be checked
  * @i: iterator
- * Return: 0 or 1 for prime
+ * Return: 0for non-prime and 1 for prime
  */
 int checkprime(int n, int i)
 {
