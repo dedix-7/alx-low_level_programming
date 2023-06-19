@@ -1,5 +1,4 @@
 THIS IS A SERIES OF PROJECTS ABOUT C
-
 # About
 This project is a series of C excercises
 # PROJECTS
@@ -11,5 +10,8 @@ The projects are given by ALX and they own the copywright
 This project is about dynamic memory allocation
 ## 0x0D-preprocessor
 This project is about the C preprocessor (cpp)
+## 0x0E-structures_typedef
+This project is about using structs and typedef
+
 # Authors
 Enoks
