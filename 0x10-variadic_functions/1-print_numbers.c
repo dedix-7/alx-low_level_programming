@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-/**
+11;rgb:0000/0000/0000/**
  * print_numbers - prints given numbers followed by a new line
  * @separator: string between numbers
  * @n: number of passed integers
@@ -21,5 +21,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	va_end(args);
-	_putchar("\n");
+	printf("\n");
 }
