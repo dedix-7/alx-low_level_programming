@@ -6,17 +6,17 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int counter, value, sum = 0;
+	unsigned int counter, value, sum = 0;
 	
 	if (n == 0)
 	{
 		return (0);
 	}
 	va_list args;
-	va_start(args, num);
-	for (counter = 0; counter < num; counter++)
+	va_start(args, n);
+	for (counter = 0; counter < n; counter++)
 	{
-		value = int va_arg(args, int);
+		value = va_arg(args, int);
 		sum += value;
 	}
 	return (sum);
