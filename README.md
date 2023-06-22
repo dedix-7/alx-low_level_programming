@@ -14,6 +14,7 @@ This project is about dynamic memory allocation
 This project is about the C preprocessor (cpp)
 ## 0x0E-structures_typedef
 This project is about using structs and typedef
-
+## 0x0F-function_pointers
+This project is about function pointers and their uses
 # Authors
 Enoks
