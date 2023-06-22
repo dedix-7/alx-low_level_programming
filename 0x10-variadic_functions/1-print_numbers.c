@@ -7,10 +7,10 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int count, value;
+	unsigned int count, value;
 	va_list args;
 
-	va_start(args, n)
+	va_start(args, n);
 	for (count = 0; count < n; count++)
 	{
 		value = va_arg(args, int);
@@ -20,5 +20,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		}
 	}
+	va_end(args);
 	printf("\n");
 }
