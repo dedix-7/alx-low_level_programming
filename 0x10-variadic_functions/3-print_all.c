@@ -1,60 +1,55 @@
 #include "variadic_functions.h"
 /**
- * sprint - print strings for task
- * @c: string
+ * sprint - porints a stribng according to task requirements
+ * @str: string to be printed
+ * Return: No return
  */
-void sprint(char *c)
+void sprint(char *str)
 {
-	while (*c != '\0')
+	if (str == NULL)
 	{
-		if (c == NULL)
-		{
-			printf("(nil)");
-		}
-		else
-		{
-			printf("%s", c);
-		}
+		printf("(nil)");
+		return;
 	}
+	printf("%s", str);
 }
 /**
- * print_all - prints all 4 specifiers
- * @format: argument types
+ * print_all - print a number of formatted output
+ * @format: string containing spoecifiers
  * Return: no return
  */
 void print_all(const char *const format, ...)
 {
-	int i = 0, d;
-	float f;
-	char p;
-	char *s;
+	int formcount, i;
 	va_list args;
+	char c, *str;
+	float d;
 
-	va_start(args, format);
-	while (format[i] != '\0')
+	while (format[formcount] != '\0')
 	{
-		switch (format[i])
+		va_start(args, format);
+		switch (format[formcount])
 		{
-		case 'c':
-		  p = va_arg(args, int);
-			_putchar(p);
-			continue;
-		case 'i':
-			d = va_arg(args, int);
-			printf("%d", d);
-			continue;
-		case 'f':
-			f = va_arg(args, double);
-			printf("%f", f);
-			continue;
-		case 's':
-			s = va_arg(args, char *);
-			sprint(s);
-			continue;
-		default:
-			continue;
+			case 'c':
+				c = va_arg(args, int);
+				printf("%c", c);
+				break;
+			case 'i':
+				i = va_arg(args, int);
+				printf("%d", i);
+				break;
+			case 'f':
+				d = va_arg(args, double);
+				printf("%f", d);
+				break;
+			case 's':
+				str = va_arg(args, char *);
+				sprint(str);
+				break;
+			default:
+				continue;
 		}
-		i++;
+		formcount++;
+		va_end(args);
 	}
-	va_end(args);
 }
