@@ -8,13 +8,13 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int count;
-	char str[];
+	char *str;
 	va_list args;
 
 	va_start(args, n);
 	for (count = 0; count < n; count++)
 	{
-		str = va_arg(args, char[]);
+		str = va_arg(args, char *);
 		if (str == NULL)
 		{
 			printf("(nil)");
