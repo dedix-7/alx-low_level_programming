@@ -5,6 +5,9 @@ This project is a series of C excercises
 ## 0x08-Recursion
 This project tackles several excercises and projects on recusrion
 The projects are given by ALX and they own the copywright
+## 0x09-static_libraries
+This project is about creating, indexing and archiving static libraries in C
+It looks at manipulating the various ar options
 ## 0x0A-argc_argv
 This project is about commandline arguments in C
 They enabe programs to take and manipulate commands from the terminal
