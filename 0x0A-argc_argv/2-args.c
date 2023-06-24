@@ -5,15 +5,13 @@
  * @argv: array of strings
  * Return: 0 on sucess
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int printcount;
 
 	for (printcount = 0; printcount < argc; printcount++)
 	{
 		printf("%s\n", argv[printcount]);
-		printcount++;
 	}
-	printf("\n");
 	return (0);
 }
