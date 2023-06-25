@@ -7,20 +7,22 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **array, element, widthelement;
+	int column, count, **array;
 
-	if (width <= 0)
+	if ((width <= 0) || (height <= 0))
 		return (NULL);
-	if (height <= 0)
-		return (NULL);
-	array = malloc(width * height);
+	array = malloc(sizeof (int *) * width);
 	if (array == NULL)
 		return (NULL);
-	for (element = 0; element < height; element++)
+	for (count = 0; count < height; count++)
 	{
-		for (widthelement = 0; widthelement < width; width++)
+		array[count] = malloc(sizeof(int) * width);
+	}
+	for (count = 0; count < height; count++)
+	{
+		for (column = 0; column < width; width++)
 		{
-			array[element][widthelement] = 0;
+			array[count][column] = 0;
 		}
 	}
 	return (array);
