@@ -1,1 +1,5 @@
-This project os about creating static librarues in C
+# Static Libraries in C
+This project is about creating a static li brary.
+The library is created and indexed, with an index, it is easier for the compiler to access it
+# Author
+Enox/dedix-7
