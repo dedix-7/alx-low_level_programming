@@ -9,7 +9,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *addrhead, newhead;
 
-	newhead.str = const char *str;
+	newhead.str = strdup(str);
 	newhead.next = &(**head);
 	addrhead = &newhead;
 	head = &addrhead;
