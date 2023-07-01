@@ -16,7 +16,7 @@ list_t *createnode(const char *str)
 	result->str = strdup(str);
 	if (result->str == NULL)
 	{
-		free (result);
+		free(result);
 		return (NULL);
 	}
 	result->next = NULL;
