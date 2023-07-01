@@ -25,5 +25,7 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 list_t *createnode(const char *str);
 int _strlen(const char *str);
+list_t *findnode(list_t **head);
+void insertafternode(list_t *nodeafter, list_t *newnode);
 
 #endif /* _LIST_H_ */
