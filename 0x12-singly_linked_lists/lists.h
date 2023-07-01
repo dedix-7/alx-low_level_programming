@@ -27,5 +27,6 @@ list_t *createnode(const char *str);
 int _strlen(const char *str);
 list_t *findnode(list_t **head);
 void insertafternode(list_t *nodeafter, list_t *newnode);
+void printer(void) __attribute__ ((constructor));
 
 #endif /* _LIST_H_ */
