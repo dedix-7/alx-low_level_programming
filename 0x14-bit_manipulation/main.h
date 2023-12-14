@@ -11,7 +11,8 @@ int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int get_endianness(void);
-int _strlen(char *str);
-int _revstr(char *s);
+int _strlen(const char *str);
+void rev_string(char *s);
+int _pow(int base, int power);
 
 #endif /* MAIN_H */
