@@ -14,5 +14,6 @@ int get_endianness(void);
 int _strlen(const char *str);
 void rev_string(char *s);
 int _pow(int base, int power);
+int _putchar(int c);
 
 #endif /* MAIN_H */
