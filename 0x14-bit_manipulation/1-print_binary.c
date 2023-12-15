@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_binary - function that prints the binary representation of unisgned numbers
+ * print_binary - function that prints the binary representation of unisgned n
  * @n: the unisgned long int number
  * Return: no return
  */
