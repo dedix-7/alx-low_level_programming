@@ -24,8 +24,8 @@ int get_bit(unsigned long int n, unsigned int index)
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unisgned int bit_num = 0, bit1, bit2;
-	unisgned int i, numbits = sizeof(unsigned long int) * 8;
+	unsigned int bit_num = 0, bit1, bit2;
+	unsigned int i, numbits = sizeof(unsigned long int) * 8;
 
 	for (i = 0; i < numbits; ++i)
 	{
