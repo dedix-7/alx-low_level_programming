@@ -9,7 +9,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fildes;
 	ssize_t read_bytes;
-	size_t writ_bytes;
+	ssize_t writ_bytes;
 	char *buf;
 
 	if (!(filename))
@@ -23,20 +23,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fildes);
 		return (0);
 	}
-	read_bytes = read(fildes, buf, (letters));
-	if (read_bytes == -1)
+	read_bytes = read(fildes, buf, letters);
+	if ((read_bytes < 0))
 	{
 		close(fildes);
 		free(buf);
 		return (0);
 	}
-	writ_bytes = write(STDOUT_FILENO, buf, (letters));
-	if (writ_bytes != letters)
+	writ_bytes = write(STDOUT_FILENO, buf, read_bytes);
+	if (((size_t) writ_bytes != (size_t) read_bytes) || (writ_bytes < 0))
 	{
 		close(fildes);
 		free(buf);
 		return (0);
 	}
 	free(buf);
+	close(fildes);
+	
 	return (read_bytes);
 }
