@@ -25,9 +25,8 @@ int main(int argc, char **argv, char **envp)
 			perror("can't read fron stdin\n");
 			exit(EXIT_FAILURE);
 		}
-		child = fork();
-		printf("Now we're in %u process\n The child is %u process\n", getpid(), child);
-		if (child == 0)
+		printf("Now we're in %u process\n The child is %u process\n", getpid());
+		if ((child = (fork())) == 0)
 		{
 			lim[0] = line, lim[1] = NULL;
 			exe = execve(line, lim, NULL);
