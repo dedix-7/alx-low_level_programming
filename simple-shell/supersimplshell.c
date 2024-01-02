@@ -14,6 +14,7 @@ int countstring(char *str, char *n)
 	{
 		if (str[i] == *n)
 			++times;
+		i++;
 	}
 	return (times);
 }
@@ -23,7 +24,7 @@ int countstring(char *str, char *n)
  */
 int main(void)
 {
-	char *cmd, *cmd1 = NULL, **argv;
+	char *cmd = NULL, *cmd1 = NULL, **argv;
 	size_t bytes;
 	ssize_t getl;
 	int len, exe,i = 0, status = CMD;
