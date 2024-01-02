@@ -56,7 +56,7 @@ int main(void)
 	else
 	{
 		argv = malloc(len * (sizeof(char **)));
-		argv[i] = strtok(cmd, " ");
+		argv[i] = strtok(NULL, " ");
 		i++;
 		for (i = 1; i < len; i++)
 			argv[i] = strtok(cmd, " ");
