@@ -14,6 +14,7 @@ int main(void)
 	for (i = 0; i < 5; ++i)
 	{
 		child[i] = fork();
+		printf("Let's see if this is executed in all children or the parentr does");
 		if (child[i] == -1)
 			printf("error createing new process\n");
 		else if (!(child[i]))

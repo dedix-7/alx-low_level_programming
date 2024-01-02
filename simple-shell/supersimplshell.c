@@ -1,47 +1,47 @@
 #include "main.h"
-/**
- * @argc: count of arguments
- * @argv: vector arrsy
- * @envp: emvironment variable
- * Return: 0 on success
- */
-int main(int argc, char **argv, char **envp)
-{
-	pid_t child;
-	char *line, *lim[2];
-	int ret, status, exe;
-	size_t bytes;
-	(void) argc;
-	(void) argv;
-	(void) envp;
 
-	while (1)
+#define CMD 1024
+/**
+ * countstring - counts the number of a times acharcter appears in a string
+ * @str: string to use
+ * @n: char to find and count
+ * Return: number of times the chracters was in the string
+ */
+int countstring(char *str, char n)
+{
+	int i = 0, times = 0;
+
+	while (str[i])
 	{
-		printf("We are in %u process i.e. parent\n", getpid());
-		printf("myshell $: ");
-		ret = getline(&line, &bytes, stdin);
-		if (ret < 0)
-		{
-			perror("can't read fron stdin\n");
-			exit(EXIT_FAILURE);
-		}
-		printf("Now we're in %u process\n The child is %u process\n", getpid());
-		if ((child = (fork())) == 0)
-		{
-			lim[0] = line, lim[1] = NULL;
-			exe = execve(line, lim, NULL);
-			printf("Execeve is supposed to execeute in this child process %u\n", getpid());
-			if (exe == -1)
-			{
-				fprintf(stderr, "Can't execute %s\n", line);
-				kill(child, 1);
-			}
-		}
-		else
-		{
-			printf("The child has exited\n");
-			wait(&status);
-		}
+		if (str[i] == n)
+			++times;
 	}
+	return (times);
+}
+/**
+ * main - supersimple shell
+ * Return - 0 on success
+ */
+int main(void)
+{
+	char *cmd, **argv;
+	size_t bytes, i = 0;
+	ssize_t getl;
+	int len;
+
+	getl = getline(&cmd, &bytes, stdin);
+	if (get < 0)
+	{
+		perror("Can't read from stdin");
+		exit(EXIT_FAILURE);
+	}
+	cmd = strtok(cmd, "\n");
+	len = countstring(cmd, " ");
+	argv = malloc(len * (sizeof(char **)));
+	argv[i] = strtok(cmd, " ");
+	i++;
+	for (i = 1; i < len; i++)
+	{
+		argv
 	return (0);
 }
