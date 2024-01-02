@@ -23,7 +23,7 @@ int countstring(char *str, char *n)
  */
 int main(void)
 {
-	char *cmd = NULL, **argv;
+	char *cmd, *cmd1 = NULL, **argv;
 	size_t bytes;
 	ssize_t getl;
 	int len, exe,i = 0, status = CMD;
@@ -32,16 +32,15 @@ int main(void)
 	while (1)
 	{
 	printf("myshell $:");
-	getl = getline(&cmd, &bytes, stdin);
+	getl = getline(&cmd1, &bytes, stdin);
 	if (getl < 0)
 	{
 		perror("Can't read from stdin");
 		exit(EXIT_FAILURE);
 	}
-	perror("Stopped eecuting after getting input using getline\n");
-	cmd = strtok(cmd, "\n");
+	cmd = strtok(cmd1, "\n");
 	len = countstring(cmd, " ");
-	perror("Stooped executing after strtok\n")
+	perror("Stooped executing after strtok\n");
 	if (len == 0)
 	{
 		argv = malloc(2 * (sizeof(char **)));
@@ -52,8 +51,8 @@ int main(void)
 		}
 		argv[0] = cmd;
 		argv[1] = NULL;
+		perror("stopped executing after checking for len as 0, i.e. no spaces in command");
 	}
-	perror("Stopped executing after checking for 0 len\n");
 	else
 	{
 		argv = malloc(len * (sizeof(char **)));
