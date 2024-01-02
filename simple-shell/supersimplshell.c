@@ -24,7 +24,7 @@ int countstring(char *str, char *n)
  */
 int main(void)
 {
-	char *cmd, **argv;
+	char *cmd = NULL, **argv;
 	size_t bytes;
 	ssize_t getl;
 	int len, exe,i = 0, status = CMD;
