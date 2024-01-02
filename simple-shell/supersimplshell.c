@@ -1,5 +1,4 @@
 #include "main.h"
-
 #define CMD 1024
 /**
  * countstring - counts the number of a times acharcter appears in a string
@@ -39,8 +38,10 @@ int main(void)
 		perror("Can't read from stdin");
 		exit(EXIT_FAILURE);
 	}
+	perror("Stopped eecuting after getting input using getline\n");
 	cmd = strtok(cmd, "\n");
 	len = countstring(cmd, " ");
+	perror("Stooped executing after strtok\n")
 	if (len == 0)
 	{
 		argv = malloc(2 * (sizeof(char **)));
@@ -52,6 +53,7 @@ int main(void)
 		argv[0] = cmd;
 		argv[1] = NULL;
 	}
+	perror("Stopped executing after checking for 0 len\n");
 	else
 	{
 		argv = malloc(len * (sizeof(char **)));
@@ -60,7 +62,13 @@ int main(void)
 		for (i = 1; i < len; i++)
 			argv[i] = strtok(cmd, " ");
 	}
+	perror("Stopped executing after seeing len is not 0\n");
 		child = fork();
+		if (child == -1)
+		{
+			perror("Can't create chils process\n");
+			exit(EXIT_FAILURE);
+		}
 		printf("myshell $:");
 		if (child == 0)
 		{
