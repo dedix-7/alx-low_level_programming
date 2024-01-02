@@ -56,6 +56,7 @@ int main(void)
 	}
 	else
 	{
+		len++;
 		argv = malloc(len * (sizeof(char **)));
 		argv[i] = strtok(NULL, " ");
 		i++;
