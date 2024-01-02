@@ -30,6 +30,8 @@ int main(void)
 	int len, exe,i = 0, status = CMD;
 	pid_t child;
 
+	while (1)
+	{
 	printf("myshell $:");
 	getl = getline(&cmd, &bytes, stdin);
 	if (getl < 0)
@@ -58,8 +60,6 @@ int main(void)
 		for (i = 1; i < len; i++)
 			argv[i] = strtok(cmd, " ");
 	}
-	while (1)
-	{
 		child = fork();
 		printf("myshell $:");
 		if (child == 0)
