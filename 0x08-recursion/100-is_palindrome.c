@@ -6,7 +6,7 @@
  */
 int _strlen(char *str)
 {
-  	int length = 0;
+	int length = 0;
 
 	if (*str == '\0')
 	{
@@ -47,5 +47,5 @@ int is_palindrome(char *str)
 	length = _strlen(str);
 	if ((length == 0) || (length == 1))
 		return (1);
-	return (check_palindrome(str,0, length - 1));
+	return (check_palindrome(str, 0, length - 1));
 }
