@@ -13,7 +13,7 @@ int _strlen(char *str)
 		return (0);
 	}
 	length++;
-	length += _strlen_recursion(str + 1);
+	length += _strlen(str + 1);
 	return (length);
 }
 /**
