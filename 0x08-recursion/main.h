@@ -13,5 +13,6 @@ int is_palindrome(char *s);
 int squareroot(int n, int i);
 int checkprime(int n, int c);
 int comparator(char *s, int n1, int n2);
+int wildcmp(char *s1, char *s2);
 
 #endif
