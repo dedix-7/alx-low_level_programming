@@ -21,7 +21,6 @@ int _strlen(char *str)
 char *_strcpynob(char *dest, char *src)
 {
 	int len, i;
-	char *new;
 
 	len = _strlen(src);
 	for (i = 0; src[i] && i < len; ++i)
@@ -38,7 +37,7 @@ char *_strcpynob(char *dest, char *src)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, size;
+	unsigned int i, j, size;
 	char *new;
 
 	if (!(s1))
@@ -50,10 +49,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (new == NULL)
 		return (NULL);
 	_strcpynob(new, s1);
-	new = new + _strlen(s1);
+	j = _strlen(s1);
 	for (i = 0; (i < n) && (s2[i]); i++)
-		new[i] = s2[i];
-	j = ++i;
-	new[j] = '\0';
+		new[j + i] = s2[i];
+	if (s2[i])
+		j++;
+	new[j + i] = '\0';
 	return (new);
 }
