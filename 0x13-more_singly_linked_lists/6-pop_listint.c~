@@ -1,0 +1,4 @@
+#include "lists.h"
+/**
+ * pop_listint - a function that deletes the head of a linked list
+ * 
