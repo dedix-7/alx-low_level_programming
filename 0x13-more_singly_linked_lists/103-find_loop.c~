@@ -1,0 +1,6 @@
+#include "lists.h"
+/**
+ * find_listint_loop - finds if there's a loop in a linked lists
+ * @head: head of the list
+ * Return: address where the loop starts
+ */
