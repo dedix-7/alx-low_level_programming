@@ -1,11 +1,35 @@
 #include "lists.h"
 /**
- * find_listint_loop - function that finds
+ * fid_listint_loop - function that finds
  * a loop in a linked list
  * It returns the entry point of the loop
  * @head: head of the list
  * Return: address of the beginning node or NULL if there's not
  */
+listint_t *fid_listint_loop(listint_t *head)
+{
+	listint_t *fast, *slow;
+
+	if ((head == NULL) || (head->next == NULL))
+		return (NULL);
+	fast = slow = head;
+	while (fast && fast->next)
+	{
+		fast = fast->next->next;
+		slow = slow->next;
+		if (fast == slow)
+		{
+			fast = head;
+			while (slow != fast)
+			{
+				slow = slow->next;
+				fast = fast->next;
+			}
+			return (fast);
+		}
+	}
+	return (NULL);
+}
 /**
  * free_listint_safe - frees a linked list.
  * It can free lists with a loop
@@ -20,17 +44,23 @@ size_t free_listint_safe(listint_t **h)
 
 	if ((!(h)) || (!(*h)))
 		return (0);
-	entry = find_listint_loop(head);
+	entry = fid_listint_loop(*h);
 	while (*h)
 	{
-		temp = *h;
-		if (*h == entry)
+		if ((*h) == entry)
 			check = 1;
-		i++;
+		temp = (*h);
+		if (temp->next == entry && check)
+			break;
 		(*h) = (*h)->next;
 		free(temp);
-		if ((*h) == entry && check)
-			break;
+		i++;
+	}
+	if (*h)
+	{
+		temp = *h;
+		free(temp);
+		i++;
 	}
 	*h = NULL;
 	return (i);
