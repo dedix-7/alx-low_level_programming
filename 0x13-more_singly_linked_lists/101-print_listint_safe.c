@@ -60,5 +60,7 @@ size_t print_listint_safe(const listint_t *head)
 			break;
 		slow = slow->next;
 	}
+	if (entry)
+		printf("-> [%p] %d\n", (void *)entry, entry->n);
 	return (i);
 }
