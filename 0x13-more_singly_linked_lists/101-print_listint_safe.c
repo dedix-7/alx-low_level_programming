@@ -38,20 +38,18 @@ listint_t *find_listint_loop(listint_t *head)
 size_t print_listint_safe(const listint_t *head)
 {
 	listint_t *slow, *entry;
-	size_t i = 0, check = 0;
+	size_t i = 0, check = 1;
 
 	if (!(head))
 		return (0);
 	slow = (listint_t *)head;
 	entry = find_listint_loop(slow);
-	while (slow)
+	while ((slow != entry || check) && slow)
 	{
 		printf("[%p] %d\n", (void *) slow, slow->n);
 		i++;
 		if (slow == entry)
-			check = 1;
-		if ((slow->next == entry) && check)
-			break;
+			check = 0;
 		slow = slow->next;
 	}
 	if (entry)
