@@ -1,0 +1,2 @@
+# About
+makefiles in C
