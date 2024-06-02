@@ -23,7 +23,8 @@ fclean:
 	$(RM) $(NAME)
 	$(RM) $(OBJ)
 
-re:
+re: clean all
+	$(RM) $(OBJ)
 	$(CC) -o $(NAME) $(SRC)
 
 .PHONY: clean oclean re fclean
