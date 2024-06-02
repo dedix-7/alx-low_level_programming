@@ -10,19 +10,13 @@ all: $(OBJ)
 %.o:%.c
 	$(CC) -c -o $@ $^
 clean: $(NAME)
-	find . -name "*~" -type f -delete
-	find . -name "*.swp" -type f -delete
-	$(RM) -f $(NAME)
+	$(RM) -f *~ $(NAME)
 
 oclean:
 	$(RM) -f $(OBJ)
 
-fclean:
-	find . -name "*~" -type f -delete
-	find . -name "*.swp" -type f -delete
-	$(RM) -f $(NAME)
-	$(RM) -f $(OBJ)
+fclean: clean oclean
 
-re: oclean fclean clean all
+re: oclean all
 
 .PHONY: clean oclean re fclean
