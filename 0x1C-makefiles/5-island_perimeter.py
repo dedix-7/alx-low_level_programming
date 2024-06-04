@@ -15,6 +15,8 @@ def island_perimeter(grid):
         The perimeter of the island as an integer.
      """
 
+    if grid is None:
+        return 0
     visit = set()
 
     def defines(i, j):
