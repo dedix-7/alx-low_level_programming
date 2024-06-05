@@ -31,11 +31,6 @@ def island_perimeter(grid):
         The perimeter of the island as an integer.
      """
 
-<<<<<<< HEAD
-    if grid is None:
-        return 0
-    perimeter = 0
-=======
     visit = set()
 
     def defines(i, j):
@@ -54,10 +49,3 @@ def island_perimeter(grid):
         perim += defines(i, j - 1)
         perim += defines(i - 1, j)
         return perim
-
->>>>>>> parent of bcaebf0... check none input
-    for i in range(len(grid)):
-        for j in range(len(grid[0])):
-            if (grid[i][j] == 1):
-                perimeter += countper(grid, i, j)
-    return perimeter
