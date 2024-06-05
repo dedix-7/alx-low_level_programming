@@ -3,6 +3,22 @@
 """
 
 
+def countper(grid, i, j):
+    """ A function to ge the perimeter of each square
+    """
+
+    count = 0
+    if (j - 1 < 0 or grid[i][j - 1] == 0):
+        count += 1
+    if (j + 1 >= len(grid[0]) or grid[i][j + 1] == 0):
+        count += 1
+    if (i - 1 < 0 or grid[i - 1][j] == 0):
+        count += 1
+    if (i + 1 >= len(grid[0]) or grid[i + 1][j] == 0):
+        count += 1
+    return (count)
+
+
 def island_perimeter(grid):
     """
     Calculates the perimeter of the island in a grid.
@@ -17,26 +33,9 @@ def island_perimeter(grid):
 
     if grid is None:
         return 0
-    visit = set()
-
-    def defines(i, j):
-        """ a depth first function to find the root nodes of te island
-        """
-
-        if i >= len(grid) or j >= len(grid[0]) or \
-           i < 0 or j < 0 or grid[i][j] == 0:
-            return 1
-        if (i, j) in visit:
-            return (0)
-
-        visit.add((i, j))
-        perim = defines(i, j + 1)
-        perim += defines(i + 1, j)
-        perim += defines(i, j - 1)
-        perim += defines(i - 1, j)
-        return perim
-
+    perimeter = 0
     for i in range(len(grid)):
         for j in range(len(grid[0])):
-            if grid[i][j]:
-                return (defines(i, j))
+            if (grid[i][j] == 1):
+                perimeter += countper(grid, i, j)
+    return perimeter
